@@ -1,0 +1,159 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.layout {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10vh  5vh 1fr 1fr;
+}
+#title-banner {
+  background-color: whitesmoke;
+  padding-top: 3vh;
+  text-align: center;
+  width: 100vw;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  position: relative;
+  border: 2px solid;
+}
+#date-conatiner{
+  text-align: center;
+  padding-top: 1vh;
+  width: 100vw;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border: 2px solid;
+  background: whitesmoke;
+}
+ /* - - - - - - - - - - - - - - - - - - - - */
+ /* BLOG SECTION */
+.blog-container {
+    position: relative;
+    width: 33vw;
+    border: 2px solid;
+    background-color: whitesmoke;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.blog-title {
+   text-align: center;
+   border-bottom: 4px solid;
+   padding-top: 1vh;
+   height: 3vh;
+}
+.tumblr-view {
+  height: 100vh;
+}
+
+#header {
+  display: none;
+}
+
+div .iframe-controls-container.iframe-controls-container--unified {
+  display: none;
+}
+/* - - - - - - - - - - - - - - - - - - - - */
+/* ARCHIVE SECTION */
+.archive-container {
+  position: relative;
+  width: 33vw;
+  border: 2px solid;
+  background-color: whitesmoke;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.archive-title {
+  text-align: center;
+  border-bottom: 4px solid;
+  padding-top: 1vh;
+  height: 3vh;
+}
+/* - - - - - - - - - - - - - - - - - - - - */
+/* BIO SECTION */
+.bio-container {
+  position: relative;
+  width: 33.15vw;
+  border: 2px solid;
+  background-color: whitesmoke;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.bio-title {
+  text-align: center;
+  border-bottom: 4px solid;
+  padding-top: 1vh;
+  height: 3vh;
+}
+
+
+
+/* .tumblr title {
+    font-family: Arial, SimHei;
+    font-size: 64px;
+    line-height: 4em;
+    color:#FFFFFF;
+}
+
+.tumblr_body {
+    font-family: Arial, SimHei;
+    font-size:16px;
+    line-height:1.5em;
+}
+
+.tumblr_caption {
+    font-family: Arial, SimHei;
+    font-size: 64px;
+} */
