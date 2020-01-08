@@ -64,6 +64,7 @@ table {
   grid-column-end: 4;
   position: relative;
   border: 2px solid;
+  z-index: 1;
 }
 #date-conatiner{
   text-align: center;
@@ -73,13 +74,14 @@ table {
   grid-column-end: 4;
   border: 2px solid;
   background: whitesmoke;
+  z-index: 1;
 }
  /* - - - - - - - - - - - - - - - - - - - - */
  /* BLOG SECTION */
 .blog-container {
     position: relative;
     width: 33vw;
-    border: 2px solid;
+    /* border: 2px solid; */
     background-color: whitesmoke;
     grid-row-start: 3;
     grid-row-end: 5;
@@ -89,21 +91,30 @@ table {
 
 .blog-title {
    text-align: center;
+   border-top: 2px solid;
+   border-left: 2px solid;
    border-bottom: 4px solid;
+   background-color: whitesmoke;
    padding-top: 1vh;
    height: 3vh;
+   z-index: 1;
 }
 .tumblr-view {
-  height: 100vh;
+    height: 100vh;
+    position: relative;
+    top: -21vh;
+    height: 100vh;
+    width: 36.5vw;
+    margin-left: -1.8vw;
 }
 
-#header {
+/* #header {
   display: none;
 }
 
 div .iframe-controls-container.iframe-controls-container--unified {
   display: none;
-}
+} */
 /* - - - - - - - - - - - - - - - - - - - - */
 /* ARCHIVE SECTION */
 .archive-container {
@@ -113,6 +124,7 @@ div .iframe-controls-container.iframe-controls-container--unified {
   background-color: whitesmoke;
   grid-row-start: 3;
   grid-row-end: 5;
+  z-index: 1;
 }
 
 .archive-title {
@@ -130,6 +142,7 @@ div .iframe-controls-container.iframe-controls-container--unified {
   background-color: whitesmoke;
   grid-row-start: 3;
   grid-row-end: 5;
+  z-index: 1;
 }
 .bio-title {
   text-align: center;
