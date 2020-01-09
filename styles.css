@@ -76,6 +76,10 @@ table {
   background: whitesmoke;
   z-index: 1;
 }
+
+.divider {
+  text-align: center;
+}
  /* - - - - - - - - - - - - - - - - - - - - */
  /* BLOG SECTION */
 .blog-container {
@@ -108,13 +112,6 @@ table {
     margin-left: -1.8vw;
 }
 
-/* #header {
-  display: none;
-}
-
-div .iframe-controls-container.iframe-controls-container--unified {
-  display: none;
-} */
 /* - - - - - - - - - - - - - - - - - - - - */
 /* ARCHIVE SECTION */
 .archive-container {
@@ -133,6 +130,27 @@ div .iframe-controls-container.iframe-controls-container--unified {
   padding-top: 1vh;
   height: 3vh;
 }
+
+.archive-scroll{
+  height: 79vh;
+  overflow: scroll;
+  position: relative;
+}
+
+.archive-article {
+
+}
+
+.article-title {
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+.article-blurb {
+    text-align: justify;
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
 /* - - - - - - - - - - - - - - - - - - - - */
 /* BIO SECTION */
 .bio-container {
@@ -150,23 +168,8 @@ div .iframe-controls-container.iframe-controls-container--unified {
   padding-top: 1vh;
   height: 3vh;
 }
-
-
-
-/* .tumblr title {
-    font-family: Arial, SimHei;
-    font-size: 64px;
-    line-height: 4em;
-    color:#FFFFFF;
+.bio-scroll {
+  height: 79vh;
+  overflow: scroll;
+  position: relative;
 }
-
-.tumblr_body {
-    font-family: Arial, SimHei;
-    font-size:16px;
-    line-height:1.5em;
-}
-
-.tumblr_caption {
-    font-family: Arial, SimHei;
-    font-size: 64px;
-} */
