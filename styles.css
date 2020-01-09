@@ -108,7 +108,7 @@ table {
     position: relative;
     top: -21vh;
     height: 100vh;
-    width: 36.5vw;
+    width: 34vw;
     margin-left: -1.8vw;
 }
 
@@ -162,7 +162,7 @@ table {
   grid-row-end: 5;
   z-index: 1;
 }
-.bio-title {
+.bio-header {
   text-align: center;
   border-bottom: 4px solid;
   padding-top: 1vh;
@@ -174,10 +174,24 @@ table {
   position: relative;
 }
 
+.bio-title {
+  text-align: center;
+  position: relative;
+  top: 1vh;
+  margin-bottom: 2vh;
+}
+
 #bio-image {
   position: relative;
-  /* align: left; */
-  width: 16vw;
+  width: 15vw;
   left: 1vw;
   top: 1vh;
+  margin-right: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 2vh;
+}
+.bio-text{
+  text-align: justify;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
