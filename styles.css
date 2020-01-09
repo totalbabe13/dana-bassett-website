@@ -173,3 +173,11 @@ table {
   overflow: scroll;
   position: relative;
 }
+
+#bio-image {
+  position: relative;
+  /* align: left; */
+  width: 16vw;
+  left: 1vw;
+  top: 1vh;
+}
