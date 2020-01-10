@@ -49,14 +49,15 @@ table {
 }
 
 .layout {
+	position: fixed;
 	height: 97.8vh;
   width: 98.8vw;
 	border: 8px solid black;
-  background-color: black;
+  background-color: blue;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 10vh  5vh 1fr 1fr;
-	z-index: 3;
+
 }
 #title-banner {
   font-family: 'UnifrakturMaguntia', cursive;
@@ -71,14 +72,26 @@ table {
   grid-column-end: 4;
   position: relative;
   border-bottom: 2px solid;
-  z-index: 1;
+
 }
 
-#date-conatiner{
+.sub-header {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	background-color: #f71100;
+}
+
+#date-header{
   font-family: 'Public Sans', sans-serif;
   text-align: center;
   padding-top: 1vh;
   width: 98vw;
+	height: 4vh;
+	grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 4;
 	border-left: 0.35em solid;
@@ -86,7 +99,39 @@ table {
 	border-top: 2px solid;
   border-bottom: 2px solid;
   background: whitesmoke;
+}
+#twitter-link {
+	grid-row-start: 1;
+  grid-column-start: 3;
+  position: relative;
+  display: block;
+  top: 1vh;
+  left: 28vw;
+}
+
+#twitter-icon {
+  width: 40px;
+  height: 1.2em;
   z-index: 1;
+  position: relative;
+  /* top: -83.2vh;
+  left: 92vw; */
+}
+#insta-icon {
+  width: 1.3em;
+  height: 1.3em;
+  position: relative;
+  z-index: 1;
+	grid-row-start: 2;
+	grid-column-start: 3:
+}
+#insta-link {
+	display: block;
+  grid-row-start: 1;
+  grid-column-start: 3;
+	position: relative;
+  top: 1vh;
+	left: 26vw;
 }
 
 .divider {
@@ -113,11 +158,12 @@ table {
 .blog-title {
    font-family: 'Public Sans', sans-serif;
    text-align: center;
+	 border-top: 1px;
    border-bottom: 4px solid;
    background-color: whitesmoke;
    padding-top: 1vh;
-   height: 3vh;
-   z-index: 1;
+   height: 3.3vh;
+
 }
 .tumblr-view {
     position: relative;
@@ -137,14 +183,13 @@ table {
   background-color: whitesmoke;
   grid-row-start: 3;
   grid-row-end: 5;
-  z-index: 1;
 }
 
 .archive-title {
   text-align: center;
   border-bottom: 4px solid;
   padding-top: 1vh;
-  height: 3vh;
+  height: 3.3vh;
 }
 
 .archive-scroll{
@@ -175,13 +220,13 @@ table {
 .bio-container {
     position: relative;
     width: 31.1vw;
+		height: 82.3vh;
     border-top: 2px solid;
     border-left: 0.3em solid;;
     border-right: 6px solid;
     background-color: whitesmoke;
     grid-row-start: 3;
     grid-row-end: 5;
-    z-index: 1;
 		overflow: scroll;
 }
 .bio-header {
@@ -189,13 +234,13 @@ table {
   text-align: center;
   border-bottom: 4px solid;
   padding-top: 1vh;
-  height: 3vh;
+  height: 3.3vh;
 }
 .bio-scroll {
   height: 79vh;
   overflow: scroll;
   position: relative;
-	z-index: -1;
+
 }
 
 .bio-title {
@@ -208,7 +253,7 @@ table {
 
 #bio-image {
   position: relative;
-  width: 15vw;
+  width: 8vw;
   left: 1vw;
   top: 1vh;
   margin-right: 1vw;
