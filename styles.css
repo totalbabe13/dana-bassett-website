@@ -49,12 +49,14 @@ table {
 }
 
 .layout {
-  height: 100vh;
-  width: 100vw;
-  background-color: lightblue;
+	height: 97.8vh;
+  width: 98.8vw;
+	border: 8px solid black;
+  background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 10vh  5vh 1fr 1fr;
+	z-index: 3;
 }
 #title-banner {
   font-family: 'UnifrakturMaguntia', cursive;
@@ -62,23 +64,27 @@ table {
   background-color: whitesmoke;
   padding-top: 1.8vh;
   text-align: center;
-  width: 100vw;
+	width: 98vw;
+  border-left: 0.111em solid;
+  border-right: 0.111em solid;
   grid-column-start: 1;
   grid-column-end: 4;
   position: relative;
-  border: 2px solid;
+  border-bottom: 2px solid;
   z-index: 1;
 }
-
 
 #date-conatiner{
   font-family: 'Public Sans', sans-serif;
   text-align: center;
   padding-top: 1vh;
-  width: 100vw;
+  width: 98vw;
   grid-column-start: 1;
   grid-column-end: 4;
-  border: 2px solid;
+	border-left: 0.35em solid;
+  border-right: 0.31em solid;
+	border-top: 2px solid;
+  border-bottom: 2px solid;
   background: whitesmoke;
   z-index: 1;
 }
@@ -91,7 +97,12 @@ table {
 .blog-container {
     position: relative;
     width: 33vw;
-    /* border: 2px solid; */
+		height: 82.3vh;
+    margin-left: 0.01em;
+    border-left: 0.3em solid;
+    border-top: 2px solid;
+		border-bottom: 2px solid;
+    border-right: 0.3em solid;
     background-color: whitesmoke;
     grid-row-start: 3;
     grid-row-end: 5;
@@ -102,8 +113,6 @@ table {
 .blog-title {
    font-family: 'Public Sans', sans-serif;
    text-align: center;
-   border-top: 2px solid;
-   border-left: 2px solid;
    border-bottom: 4px solid;
    background-color: whitesmoke;
    padding-top: 1vh;
@@ -111,7 +120,6 @@ table {
    z-index: 1;
 }
 .tumblr-view {
-    height: 100vh;
     position: relative;
     top: -21vh;
     height: 100vh;
@@ -122,9 +130,9 @@ table {
 /* - - - - - - - - - - - - - - - - - - - - */
 /* ARCHIVE SECTION */
 .archive-container {
-  font-family: 'Public Sans', sans-serif;
   position: relative;
   width: 33vw;
+	height: 82.3vh;
   border: 2px solid;
   background-color: whitesmoke;
   grid-row-start: 3;
@@ -165,13 +173,16 @@ table {
 
 /* BIO SECTION */
 .bio-container {
-  position: relative;
-  width: 33.15vw;
-  border: 2px solid;
-  background-color: whitesmoke;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  z-index: 1;
+    position: relative;
+    width: 31.1vw;
+    border-top: 2px solid;
+    border-left: 0.3em solid;;
+    border-right: 6px solid;
+    background-color: whitesmoke;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    z-index: 1;
+		overflow: scroll;
 }
 .bio-header {
   font-family: 'Public Sans', sans-serif;
@@ -184,6 +195,7 @@ table {
   height: 79vh;
   overflow: scroll;
   position: relative;
+	z-index: -1;
 }
 
 .bio-title {
@@ -209,8 +221,24 @@ table {
   margin-right: 1vw;
 }
 .video-container {
+  align-content: center;
   position: relative;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2vh;
+  width: 25vw;
+}
+.bio-details {
+  width: 29vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.writing-list {
+  list-style: none;
+}
+.writing-list li:before {
+   content: "\2192";
+}
+.list-item {
+  margin-top: 1.5vw;
 }
