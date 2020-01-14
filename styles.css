@@ -345,16 +345,16 @@ table {
     background-color: black;
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-template-rows: 10vh 5vh 5vh 1fr;
+    grid-template-rows: 9vh 9.5vh 7.5vh 1fr;
 	}
 
 	.nav-small-media {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-column-gap: 2px;
-		position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+    position: relative;
     left: 0.5vh;
-    height: 5vh;
+    height: 6vh;
     width: 95.3vw;
     background-color: black;
 	}
@@ -365,7 +365,7 @@ table {
 	}
 
 	#title-banner {
-		color: blue;
+		/* color: blue; */
     font-family: 'UnifrakturMaguntia', cursive;
     font-size: 2.1em;
     background-color: whitesmoke;
@@ -381,12 +381,13 @@ table {
   }
 
 	#date-header {
-    font-family: 'Public Sans', sans-serif;
-		font-size: 0.9em;
-    text-align: center;
-    padding-top: 1vh;
-    width: 95vw;
-    height: 3.4vh;
+		font-family: 'Public Sans', sans-serif;
+    font-size: 0.8em;
+    text-align: left;
+    padding-left: 2vw;
+    padding-top: 2vh;
+    width: 93vw;
+    height: 5.6vh;
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -396,30 +397,35 @@ table {
     background: whitesmoke;
 }
 #email-link {
-    grid-row-start: 1;
-    grid-column-start: 3;
-    position: relative;
-    left: 5.2vw;
-    top: 0.5vw;
+	grid-row-start: 1;
+	grid-column-start: 3;
+	position: relative;
+	left: -16.8vw;
+	top: 2vw;
 }
 
 #insta-link {
-    display: block;
-    grid-row-start: 1;
-    grid-column-start: 3;
-    position: relative;
-    top: 0.6vh;
-    left: 15.7vw;
+	display: block;
+	grid-row-start: 1;
+	grid-column-start: 3;
+	position: relative;
+	top: 1.5vh;
+	left: 3.7vw;
 }
 #twitter-link {
     grid-row-start: 1;
     grid-column-start: 3;
     position: relative;
     display: block;
-    top: 0.7vh;
-    left:  19.1vw;
+    top: 1.6vh;
+    left:  16.1vw;
  }
-
+ #twitter-icon {
+     width: 44px;
+     height: 1.3em;
+     z-index: 1;
+     position: relative;
+ }
  /* - - - - BLOG MOBILE- - - - - */
 
  .blog-container {
