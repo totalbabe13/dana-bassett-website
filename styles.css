@@ -428,14 +428,24 @@ table {
  }
  /* - - - - BLOG MOBILE- - - - - */
 
- .blog-container {
-	  display: none;
+ .blog-container.viewable {
+	  display: block;
 		position: relative;
     width: 95.5vw;
     height: 82.3vh;
     border: 2px solid;
     background-color: whitesmoke;
     grid-row-start: 4;
+ }
+
+ .blog-container.hide {
+	  display: none;
+		/* position: relative;
+    width: 95.5vw;
+    height: 82.3vh;
+    border: 2px solid;
+    background-color: whitesmoke;
+    grid-row-start: 4; */
  }
  .blog-title {
 	  display: none;
@@ -463,29 +473,48 @@ table {
   }
 	/* - - - - ARCHIVE MOBILE- - - - - */
 
-	.archive-container {
- 	 /* display: none; */
- 	  position: relative;
+	.archive-container.viewable {
+ 	   display: block;
+ 	   position: relative;
      width: 95.5vw;
      height: 82.3vh;
      border: 2px solid;
      background-color: whitesmoke;
      grid-row-start: 4;
   }
+	.archive-container.hide {
+		  display: none;
+  	  /* position: relative;
+      width: 95.5vw;
+      height: 82.3vh;
+      border: 2px solid;
+      background-color: whitesmoke;
+      grid-row-start: 4; */
+	}
 
  .archive-title {
 	 display: none;
   }
 
  /* - - - - BIO MOBILE- - - - - */
- .bio-container {
-	display: none;
+ .bio-container.viewable {
+	display: block;
 	position: relative;
 	width: 95.5vw;
 	height: 82.3vh;
 	border: 2px solid;
 	background-color: whitesmoke;
 	grid-row-start: 4;
+ }
+
+ .bio-container.hide{
+	display: none;
+	/* position: relative;
+	width: 95.5vw;
+	height: 82.3vh;
+	border: 2px solid;
+	background-color: whitesmoke;
+	grid-row-start: 4; */
  }
 
  .bio-header {

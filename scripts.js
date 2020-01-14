@@ -1,5 +1,6 @@
+
 if(window.innerWidth < 480){
-  // alert("mobile!");
+  console.log("mobile!");
   let blogButton = document.querySelector(".blog-button");
   let archiveButton = document.querySelector(".archive-button");
   let bioButton = document.querySelector(".bio-button");
@@ -8,29 +9,37 @@ if(window.innerWidth < 480){
   let archiveContainer = document.querySelector(".archive-container");
   let bioContainer = document.querySelector(".bio-container");
 
-  blogButton.addEventListener("click touchstart",toggleView);
-  archiveButton.addEventListener("click touchstart",toggleView);
-  bioButton.addEventListener("click touchstart",toggleView);
+  blogButton.addEventListener("click",toggleView);
+  archiveButton.addEventListener("click",toggleView);
+  bioButton.addEventListener("click",toggleView);
+
+  blogContainer.className = "blog-container hide";
+  archiveContainer.className = "archive-container viewable";
+  bioContainer.className = "bio-container hide";
 
   function toggleView(selectedButton){
+    let blogContainer = document.querySelector(".blog-container");
+    let archiveContainer = document.querySelector(".archive-container");
+    let bioContainer = document.querySelector(".bio-container");
+    // alert("im touched");
     console.log(selectedButton.target.className);
     let selectedView = selectedButton.target.className;
 
     if(selectedView === "bio-button"){
-      console.log("slected bio section");
-      archiveContainer.style.display = "none";
-      blogContainer.style.display = "none";
-      bioContainer.style.display = "block";
+      console.log("selected bio section");
+      blogContainer.className = "blog-container hide";
+      archiveContainer.className = "archive-container hide";
+      bioContainer.className = "bio-container viewable";
 
     } else if(selectedView === "archive-button") {
-      archiveContainer.style.display = "block";
-      blogContainer.style.display = "none";
-      bioContainer.style.display = "none";
+      blogContainer.className = "blog-container hide";
+      archiveContainer.className = "archive-container viewable";
+      bioContainer.className = "bio-container hide";
 
     } else if(selectedView === "blog-button") {
-      archiveContainer.style.display = "none";
-      blogContainer.style.display = "block";
-      bioContainer.style.display = "none";
+      blogContainer.className = "blog-container viewable";
+      archiveContainer.className = "archive-container hide";
+      bioContainer.className = "bio-container hide";
     }
   }
 }
