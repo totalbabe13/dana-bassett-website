@@ -1,0 +1,58 @@
+<html ng-app="whatsTheT">
+  <head>
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="app/vendor/md5.js"></script>
+    <script src="app/vendor/jquery.gravatar.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/editions_ctrl.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Allerta:400" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <!-- <header>
+      <div class="avatar" data-avatar="danabassett@gmail.com"></div>
+      <p>
+        Dana Bassett is an aspiring gossip queen from Miami, FL living in Pilsen. She is a editor and contributor for <a href="http://badatsports.com/", target="blank">Bad at Sports</a> and occasionally produces printed newspapers in collaboration with artists and friends.
+      </p>
+    </header> -->
+    <!-- <nav fancy-header>
+      <div class="avatar" data-avatar="danabassett@gmail.com"></div>
+      <a href="/">What's the T?</a>
+      <a href="#">Session 3</a>
+      <a href="http://cargocollective.com/helloedau/ACRE-PAPER" target="_blank">ACRE Paper</a>
+      <a href="http://badatsports.com/2013/saturday-september-21st-edition-of-the-expo-register/" target="_blank">EXPO Register</a>
+      <a href="http://danabassett.com/PierReview/">Pier Review</a>
+      <a href="https://twitter.com/WhatstheT_DB" target="_blank" class="twitter">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+    </nav> -->
+    
+
+    <div id="page_wrap" ng-controller="EditionsCtrl">
+
+      <ul class="editions">
+
+        <li id="edition_{{ edition.number }}" ng-repeat="edition in editions" data-expander="{{ edition.url }}">
+          <div class="edition">
+            <div class="left_mask mask"></div>
+            <div class="right_mask mask"></div>
+            <div class="header">
+              <h3>Edition #{{ edition.number }}</h3>
+              <div class="loader"></div>
+              <div class="header_image" style="background-image: url({{ edition.header }})"></div>
+            </div>
+            <div class="iframe">
+              <div class="iframe_mask"></div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </body>
+</html>

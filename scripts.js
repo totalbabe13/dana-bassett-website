@@ -1,3 +1,42 @@
+if(window.innerWidth < 800){
+  alert("mobile!");
+  let blogButton = document.querySelector(".blog-button");
+  let archiveButton = document.querySelector(".archive-button");
+  let bioButton = document.querySelector(".bio-button");
+
+  let blogContainer = document.querySelector(".blog-container");
+  let archiveContainer = document.querySelector(".archive-container");
+  let bioContainer = document.querySelector(".bio-container")
+
+  console.log(blogContainer);
+  console.log(archiveContainer);
+  console.log(bioContainer);
+
+  blogButton.addEventListener("click",toggleView);
+  archiveButton.addEventListener("click",toggleView);
+  bioButton.addEventListener("click",toggleView);
+
+  function toggleView(selectedButton){
+    console.log(selectedButton.target.className);
+    let selectedView = selectedButton.target.className;
+
+    if(selectedView === "bio-button"){
+      console.log("slected bio section");
+      archiveContainer.style.display = "none";
+      blogContainer.style.display = "none";
+      bioContainer.style.display = "block";
+    } else if(selectedView === "archive-button") {
+      archiveContainer.style.display = "block";
+      blogContainer.style.display = "none";
+      bioContainer.style.display = "none";
+    } else if(selectedView === "blog-button") {
+      archiveContainer.style.display = "none";
+      blogContainer.style.display = "block";
+      bioContainer.style.display = "none";
+    }
+  }
+}
+
 function todaysDate(){
   let today = new Date();
   let weekday = setWeekday(today.getDay());
@@ -78,5 +117,5 @@ function setWeekday(dayNum){
 }
 
 let updateToday = todaysDate();
-let x = document.querySelector("h2");
-x.textContent = updateToday;
+let date = document.querySelector("h2");
+date.textContent = updateToday;
