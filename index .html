@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portrait_style.css">
     <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dana Bassett</title>
@@ -13,15 +14,18 @@
      <header id="title-banner">Dana Bassett | News</header>
      <div class="sub-header">
        <h2 id="date-header"> Todays Date </h2>
-       <a  id="twitter-link" target="_blank" href="https://twitter.com/WhatstheT_DB?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-         <img id="twitter-icon"src="Assets/twitter.png"  alt="twitter logo" target="_blank">
-       </a>
-       <a id="insta-link"  target="_blank" href="https://www.instagram.com/danabassit/">
-         <img id="insta-icon" src="Assets/insta.png" alt="instagram logo">
-       </a>
-       <a  id="email-link" href="mailto:danabassett@gmail.com">
-         <img id="email-icon" src="Assets/email-icon.png" alt="email icon">
-       </a>
+
+        <nav class="social-media-nav">
+          <a  id="twitter-link" target="_blank" href="https://twitter.com/WhatstheT_DB?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <img id="twitter-icon"src="Assets/twitter.png"  alt="twitter logo" target="_blank">
+          </a>
+          <a id="insta-link"  target="_blank" href="https://www.instagram.com/danabassit/">
+            <img id="insta-icon" src="Assets/insta.png" alt="instagram logo">
+          </a>
+          <a  id="email-link" href="mailto:danabassett@gmail.com">
+            <img id="email-icon" src="Assets/email-icon.png" alt="email icon">
+          </a>
+        </nav>
      </div>
      <!-- - - - - - - - - HEADERS end - - - - - - - - -->
         <!-- - - - - - - - - MEDIA query MENU start - - - - - - - - -->
@@ -31,14 +35,16 @@
           <button class="bio-button" type="button" name="button">Bio</button>
         </nav>
         <!-- - - - - - - - - MEDIA query MENU END   - - - - - - - - -->
+     <div class="content-wrapper">
+
 
      <!-- - - - - - - - - BLOG start - - - - - - - - -->
       <section class="blog-container hide">
-        <h2 class="blog-title">Blog</h2>
+        <h2 class="blog-title content-title">Blog</h2>
         <div class="blog-scroll">
 
 
-     <!-- - - - - - - - - DANA LOOK HERE start - - - - - - - - -->
+     <!-- - - - - - - - - DANA <3 LOOK HERE start - - - - - - - - -->
      <!-- this is your template, it has three elements: TITLE, TEXT, IMAGE. You can hyper link
      at will :). REMEMBER!! enclose your post inside the article tags :) -->
           <article class="blog-blurb">
@@ -63,17 +69,17 @@
               <li class="dana-listItem">AH - three </li>
             </ul> -->
             <!-- DIVIDER SPACE -->
-            <p class="divider">_________________________</p>
+             <p class="divider">_________________________</p>
           </article>
 
-
+         <!-- - - - - - - - - DANA <3 end - - - - - - - - -->
         </div>
       </section>
      <!--- - - - - - - - BLOG end - - - - - - - - -->
 
      <!-- - - - - - - - - ARCHIVE start - - - - - - - - -->
       <section class="archive-container viewable">
-          <h2 class="archive-title"> Archive</h2>
+          <h2 class="archive-title content-title"> Archive</h2>
            <!-- - - - - - -CONTENT- - - - - - -->
            <div class="archive-scroll">
             <article>
@@ -103,7 +109,7 @@
        <!-- - - - - - - - - ARCHIVE end - - - - - - -->
        <!-- - - - - - - - - BIO start - - - - - - - -->
        <section class="bio-container  hide" >
-        <h2 class="bio-header">Bio</h2>
+        <h2 class="bio-header content-title">Bio</h2>
         <div class="bio-scroll">
           <article class="bio-blurb">
             <h3 class="bio-title">WRITER | EDITOR | PRODUCER</h3>
@@ -134,14 +140,7 @@
                    </span>, Hyperallergic, March 2016.</a></li>
                <li class="list-item"><a class="writing-link" target="_blank" href="https://hyperallergic.com/338388/cryptic-deconstructions-of-big-data/"><span class="italicize">Cryptic Deconstructions of Big Data</span>, Hyperallergic, November 2016.</a></li>
                <li class="list-item"><a class="writing-link" target="_blank" href="http://sixtyinchesfromcenter.org/small-paintings-that-dont-suck-did-you-see-heaven-wysiwyg-peregrine-program/"><span class="italicize">Did You See Heaven? WYSIWYG @ Peregrine Program</span>, Sixty Inches From Center, September 2012.</a></li>
-
-
-               <!-- <li class="list-item"><a href="#">"Artists on Verge", Chicago Magazine, Tuesday, April, 2nd, 2019</a></li>
-               <li class="list-item"><a href="#">"Returning “Topless Cellist” Charlotte Moorman to Her Rightful Place in the Avant-Garde", Hyperallergic, Thursday, Marcg, 17th, 2016</a></li>
-               <li class="list-item"><a href="#">"Cryptic Deconstructions of Big Data", Hyperallergic, Wednesday, November, 16, 2016</a></li>
-               <li class="list-item"><a href="#">"Did You See Heaven? WYSIWYG @ Peregrine Program", Sixty, Tuesady, September, 25, 2012</a></li> -->
-               <li class="list-item"><a href="#">"Title", pub, weekday, month, day, yr </a></li>
-             </ul>
+               <!-- <li class="list-item"><a href="#">"Title", pub, weekday, month, day, yr </a></li> -->
            </section>
         </div>
       </section>
