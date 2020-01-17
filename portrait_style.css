@@ -15,6 +15,8 @@
 		grid-template-columns: 0;
 	}
 
+
+
 	.nav-small-media {
 		display: grid;
 		grid-row-start: 3;
@@ -26,6 +28,7 @@
 		border-bottom: 0.2vh solid;
 		background-color: black;
 	}
+
 
 	button {
     background-color: whitesmoke;
@@ -56,36 +59,53 @@
 		/* background: yellow; */
 		}
 
+.social-media-nav {
+		position: relative;
+		left: -2.8vw;
+		top: 1.2vh;
+		grid-column-start: 3;
+		align-items: unset;
+		display: grid;
+		grid-template-columns: 8vw 8vw 8vw;
+}
 #email-link {
-	/* grid-row-start: 1;
-	grid-column-start: 3;
-	position: relative;
-	left: -16.8vw;
-	top: 2vw; */
+
 }
 
 #insta-link {
-	/* display: block;
-	grid-row-start: 1;
-	grid-column-start: 3;
-	position: relative;
-	top: 1.5vh;
-	left: 3.7vw; */
+	top: 0.3vh;
+	left:  2.1vw;;
 }
 #twitter-link {
-    /* grid-row-start: 1;
-    grid-column-start: 3;
+  	grid-row-start: 1;
+    grid-column-start: 2;
     position: relative;
-    display: block;
-    top: 1.6vh;
-    left:  16.1vw; */
+    top: 0;
+    left: 0;
+
+}
+ #email-icon{
+	  position: relative;
+    height: 18px;
+    width: 30px;
+    top: 0;
+    margin: 0;
+    max-width: unset;
+    max-height: unset;
  }
  #twitter-icon {
-     /* width: 44px;
-     height: 1.3em;
-     z-index: 1;
-     position: relative; */
+	  height: 15px;
+    width: unset;
+    max-width: unset;
+    max-height: unset;
  }
+ #insta-icon{
+	  width: unset;
+    height: 14px;
+    position: relative;
+
+ }
+
 
  .content-wrapper {
 	 position: relative;
@@ -144,22 +164,16 @@
 	  background-color: whitesmoke;
   }
 	.archive-container.hide {
-		  display: none;
-  	  /* position: relative;
-      width: 95.5vw;
-      height: 82.3vh;
-      border: 2px solid;
-      background-color: whitesmoke;
-      grid-row-start: 4; */
+		display: none;
 	}
 
  .archive-title {
 	 display: none;
   }
 	.article-blurb {
-	    text-align: justify;
-	    margin-left: 3vh;
-	    margin-right: 3vh;
+	  text-align: justify;
+	  margin-left: 3vh;
+	  margin-right: 3vh;
 	}
  /* - - - - BIO MOBILE- - - - - */
  .bio-container.viewable {
@@ -171,12 +185,6 @@
 
  .bio-container.hide{
 	display: none;
-	/* position: relative;
-	width: 95.5vw;
-	height: 82.3vh;
-	border: 2px solid;
-	background-color: whitesmoke;
-	grid-row-start: 4; */
  }
 
  .bio-header {
@@ -184,9 +192,6 @@
   }
 
  .bio-scroll {
-    /* height: 138vh;
-    overflow: scroll;
-    position: relative; */
  }
 
  .bio-text {
@@ -196,11 +201,9 @@
     width: 90vw;
  }
  .video-container {
-	  position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2vh;
-    width: 100vw;
+	 position: relative;
+	 width: 83vw;
+	 margin-top: 2.8vh;
   }
 	.bio-details {
     width: 66vw;

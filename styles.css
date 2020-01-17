@@ -323,7 +323,7 @@ table {
   height: 3.3vh;
 } */
 .bio-scroll {
-  height: 72vh;
+  height: 68.5vh;
   overflow: scroll;
   position: relative;
 }
