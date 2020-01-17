@@ -106,7 +106,6 @@
 
  }
 
-
  .content-wrapper {
 	 position: relative;
 	 grid-row-start: 4;
@@ -124,36 +123,42 @@
 
  .blog-container.hide {
 	  display: none;
-		/* position: relative;
-    width: 95.5vw;
-    height: 82.3vh;
-    border: 2px solid;
-    background-color: whitesmoke;
-    grid-row-start: 4; */
  }
  .blog-title {
 	  display: none;
   }
  .blog-scroll {
-	  /* width: 92vw;
-    margin-left: 2vw; */
+	  height: 76vh;
+    border-bottom: 3vh solid black;
+		overflow-y: scroll
   }
+
+	.blog-blurb{
+    width: 96vw;
+		padding-bottom: 6vh;
+		/* overflow-y: scroll */
+	}
+	.divider{
+		margin-bottom: 4vh;
+	}
+
 	.dana-title {
-		/* margin-bottom: 3vh; */
+    margin-top: 1vh;
 	}
   .dana-text {
-		/* text-align: justify;
-    margin-left: 2vw;
-    margin-right: 2vw; */
+		margin-left: 2vw;
+    margin-right: 2vw;
+		width: 92vw;
 	}
 
 	.dana-image {
-    /* position: relative;
-    width: 75vw;
-    margin: 8.5vw; */
+		width: 90vw;
+    margin: 4.5vw;
   }
 	.dana-list {
-    /* margin: 12.5vw; */
+		position: relative;
+    left: 9vw;
+    margin: unset;
   }
 	/* - - - - ARCHIVE MOBILE- - - - - */
 
@@ -166,7 +171,9 @@
 	.archive-container.hide {
 		display: none;
 	}
-
+  .archive-scroll{
+		height: 65vh;
+	}
  .archive-title {
 	 display: none;
   }
@@ -192,6 +199,7 @@
   }
 
  .bio-scroll {
+	 overflow-y: scroll
  }
 
  .bio-text {

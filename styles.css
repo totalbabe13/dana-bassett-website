@@ -203,6 +203,10 @@ table {
     width: 32.5vw;
 }
 
+.blog-blurb{
+  display: grid;
+}
+
 /* .blog-title {
    font-family: 'Public Sans', sans-serif;
    text-align: center;
@@ -236,10 +240,11 @@ table {
 }
 .dana-image {
 	width: 30vw;
-  margin: 1.5vw;
+	margin-left: auto;
+  margin-right: auto;
 }
 .dana-list{
-	margin: 3.5vw;
+	margin-left: 3.5vw;
 }
 .dana-listItem{
 	list-style: disc;
