@@ -1,4 +1,4 @@
-@media all and (max-width: 480px) {
+@media (max-width: 480px) {
 	 body {
 		line-height: 1;
 		background-color: black;
@@ -8,21 +8,22 @@
 		width: 98vw;
 		height: 98vh;
 		margin: 1vh 1vw;
-		background-color: black;
+		background-color: whitesmoke;
 		display: grid;
-		grid-template-rows: 10vh 8vh 6vh 1fr;
+		grid-template-rows: 7vh 4vh 5vh 1fr;
+		grid-gap: 0px;
 		grid-template-columns: 0;
-		grid-row-gap: 1vh;
-		grid-column-gap: 5px;
 	}
 
 	.nav-small-media {
 		display: grid;
+		grid-row-start: 3;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-column-gap: 2px;
 		position: relative;
-		height: 6vh;
 		width: 98vw;
+		border-top: 0.2vh solid;
+		border-bottom: 0.2vh solid;
 		background-color: black;
 	}
 
@@ -34,26 +35,26 @@
 	#title-banner {
 		color: black;
 		font-size: 8.5vw;
+		align-self: center;
+		/* height: 3vh; */
 		}
 
 	.sub-header {
-		height: 8vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-start: 2;
+		height: 4vh;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		/* background-color: #CDDC39; */
 	}
 
 	#date-header {
+		position: relative;
+		top: -2.5vh;
 		font-family: 'Public Sans', sans-serif;
-    font-size: 2vh;
-    text-align: left;
-    padding-top: 2.5vh;
-    padding-left: 2vw;
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    background: whitesmoke;
-  }
+		font-size: 1.8vh;
+		height: 4vh;
+		/* grid-row-start: 2; */
+		/* background: yellow; */
+		}
 
 #email-link {
 	/* grid-row-start: 1;
@@ -88,10 +89,10 @@
 
  .content-wrapper {
 	 position: relative;
-   grid-row-start: 4;
-   width: 98vw;
-	 display: block;
- }
+	 grid-row-start: 4;
+	 width: 98vw;
+	 /* display: none; */
+	}
  /* - - - - BLOG MOBILE- - - - - */
 
  .blog-container.viewable {

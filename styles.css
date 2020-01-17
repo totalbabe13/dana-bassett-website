@@ -57,17 +57,18 @@ table {
 	margin: 1vh 1vw;
 	background-color: black;
 	display: grid;
-	grid-template-rows: 10vh 8vh 1fr 1fr;
-	grid-row-gap: 1vh;
-	grid-column-gap: 1vh;
+	grid-template-rows: 8vh 9vh 1fr 1fr;
+	grid-row-gap: 0.3vh;
+	grid-column-gap: 0vh;
 }
 #title-banner {
   font-family: 'UnifrakturMaguntia', cursive;
   font-size: 7vh;
+  height: 10vh;
   background-color: whitesmoke;
   padding-top: 2.5vh;
   text-align: center;
-	align-self: stretch;
+  align-self: stretch;
   grid-column-start: 1;
   grid-column-end: 4;
   position: relative;
@@ -76,6 +77,7 @@ table {
 .sub-header {
 	align-content: center;
 	position: relative;
+	padding-top: 1vh;
 	height: 8vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -87,27 +89,28 @@ table {
 
 #date-header{
   font-family: 'Public Sans', sans-serif;
-	font-size: 3.5vh;
+  font-size: 3.5vh;
   text-align: center;
-	padding-top: 1.5vh;
-  align-self: stretch;
-	grid-row-start: 1;
+  padding-top: 1.5vh;
+  /* align-self: stretch; */
+  grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 4;
-  background: whitesmoke;
+  /* background: #edb307; */
 }
 
 .social-media-nav{
 	position: relative;
 	justify-self: right;
-  width: 20vw;
-	top: 1.2vh;
-  /* background-color: red; */
-  grid-row-start: 1;
-  grid-column-start: 3;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+	width: 20vw;
+	top: -0.5vh;
+	left: 7vw;
+	/* background-color: #f35e5ea6; */
+	grid-row-start: 1;
+	grid-column-start: 3;
+	display: grid;
+	grid-template-columns: 7vw 7vw 7vw;
+	align-items: end;
 }
 #email-link {
 	grid-row-start: 1;
@@ -117,47 +120,58 @@ table {
 	top: 0.5vw; */
 }
 #email-icon {
-	width: 90%;
-  height: auto;
+	position: relative;
+	top: 0.8vh;
+	width: 69%;
+	max-height: 47px;
+	/* max-width: 81px; */
 	margin: 0.3vh;
+	/* background-color: #f0ffff78; */
 }
 #twitter-link {
 	grid-row-start: 1;
-  grid-column-start: 2;
-  position: relative;
-  display: block;
-  /* top: 1vh;
+	grid-column-start: 2;
+	position: relative;
+	/* display: block; */
+	/* top: 1vh;
   left: 28vw; */
+	top: 0.5vh;
+	left: -2.9vw;
 }
 
 #twitter-icon {
-	width: 97%;
-  height: auto;
-  position: relative;
+	/* display: none; */
+	/* background-color: #8bc34aab; */
+	width: 71%;
+	height: auto;
+	max-height: 41px;
+	/* max-width: 81px; */
+	position: relative;
 	margin: 0.3vh;
-  /* top: -83.2vh;
+	/* top: -83.2vh;
   left: 92vw; */
 }
 #insta-icon {
-	width: 45%;
-  height: auto;
-  padding-left: 10px;
-  position: relative;
-	margin: 0.3vh;
-  /* z-index: 1; */
+	/* display: none; */
+	/* background-color: #7fff009c; */
+	width: 31%;
+	/* height: auto; */
 	/* grid-row-start: 1;
 	grid-column-start: 3: */
+	max-height: 47px;
+	/* max-width: 36px; */
 }
 #insta-link {
-	display: block;
-  grid-row-start: 1;
-  grid-column-start: 3;
+	grid-row-start: 1;
+	grid-column-start: 3;
 	position: relative;
-  /* top: 1vh;
+	/* top: 1vh;
 	left: 25.7vw; */
+	/* top: 0.1vh; */
+	left: -4.4vw;
 }
 .nav-small-media {
-	/* display: none; */
+	display: none;
 }
 
 .content-wrapper{
@@ -169,7 +183,7 @@ table {
 	grid-column-end: 4;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 1vh;
+	grid-column-gap: 0.3vw;
 }
 .content-title {
 	font-family: 'Public Sans', sans-serif;
@@ -177,7 +191,7 @@ table {
 	text-align: center;
 	/* background-color: #6fec74; */
 	height: 5vh;
-	border-bottom: 1vh solid black;
+	border-bottom: 0.3vh solid black;
 	padding-top: 2vh;
 }
  /* - - - - - - - - - - - - - - - - - - - - */
@@ -186,7 +200,7 @@ table {
     position: relative;
     background-color: whitesmoke;
     height: 78vh;
-		width: 32vw;
+    width: 32.5vw;
 }
 
 /* .blog-title {
@@ -200,7 +214,7 @@ table {
 } */
 
 .blog-scroll{
-	height: 70vh;
+	height: 71vh;
 	/* background-color: #85e290; */
 	position: relative;
 	/* height: 77.4vh;
@@ -236,7 +250,7 @@ table {
 /* ARCHIVE SECTION */
 .archive-container {
   height: 78vh;
-	width: 32vw;
+  width: 33vw;
   position: relative;
   background-color: whitesmoke;
   border-bottom: 1vw solid black;
@@ -298,7 +312,6 @@ table {
     background-color: whitesmoke;
     /* grid-row-start: 3;
     grid-row-end: 5; */
-    overflow: scroll;
     height: 78vh;
     border-bottom: 1vh solid black;
 }
@@ -310,7 +323,7 @@ table {
   height: 3.3vh;
 } */
 .bio-scroll {
-  height: 79vh;
+  height: 72vh;
   overflow: scroll;
   position: relative;
 }
@@ -361,7 +374,7 @@ table {
 }
 .writing-link{
 	padding-left: 1vw;
-	font-size: 2vw;
+	/* font-size: 2vw; */
 }
 /* END of -->  BIO SECTION */
 .small-media-nav {
